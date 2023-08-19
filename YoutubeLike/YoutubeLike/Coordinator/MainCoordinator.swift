@@ -18,7 +18,8 @@ final class MainCoordinator: NSObject, Coordinator {
     
     func start() {
         navigationController.delegate = self
-        let vc = ViewController()
+        navigationController.navigationItem.largeTitleDisplayMode = .never
+        let vc = VideListViewController()
         navigationController.pushViewController(vc, animated: true)
     }
     

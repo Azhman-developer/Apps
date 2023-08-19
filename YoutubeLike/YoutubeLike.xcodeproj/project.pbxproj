@@ -9,25 +9,33 @@
 /* Begin PBXBuildFile section */
 		EBB37C832A90C7E900ABDBC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB37C822A90C7E900ABDBC7 /* AppDelegate.swift */; };
 		EBB37C852A90C7E900ABDBC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB37C842A90C7E900ABDBC7 /* SceneDelegate.swift */; };
-		EBB37C872A90C7E900ABDBC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB37C862A90C7E900ABDBC7 /* ViewController.swift */; };
-		EBB37C8A2A90C7E900ABDBC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB37C882A90C7E900ABDBC7 /* Main.storyboard */; };
+		EBB37C872A90C7E900ABDBC7 /* VideListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB37C862A90C7E900ABDBC7 /* VideListViewController.swift */; };
 		EBB37C8C2A90C7EA00ABDBC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB37C8B2A90C7EA00ABDBC7 /* Assets.xcassets */; };
 		EBB37C8F2A90C7EA00ABDBC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB37C8D2A90C7EA00ABDBC7 /* LaunchScreen.storyboard */; };
 		EBB37C9F2A90DA4400ABDBC7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB37C9E2A90DA4400ABDBC7 /* Coordinator.swift */; };
 		EBB37CA12A90DA7100ABDBC7 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB37CA02A90DA7100ABDBC7 /* MainCoordinator.swift */; };
+		EBB37CA32A90E0A600ABDBC7 /* VideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB37CA22A90E0A600ABDBC7 /* VideoListView.swift */; };
+		EBB37CA62A90F85100ABDBC7 /* VideoListCollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB37CA52A90F85100ABDBC7 /* VideoListCollectionViewDelegates.swift */; };
+		EBB37CA92A90F87B00ABDBC7 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB37CA82A90F87B00ABDBC7 /* TypeAliases.swift */; };
+		EBB37CAC2A90F9BF00ABDBC7 /* VideoListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB37CAB2A90F9BF00ABDBC7 /* VideoListCollectionViewCell.swift */; };
+		EBB37CAE2A90FA3000ABDBC7 /* UICollectionViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB37CAD2A90FA3000ABDBC7 /* UICollectionViewCellExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EBB37C7F2A90C7E900ABDBC7 /* YoutubeLike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeLike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB37C822A90C7E900ABDBC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBB37C842A90C7E900ABDBC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EBB37C862A90C7E900ABDBC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EBB37C892A90C7E900ABDBC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBB37C862A90C7E900ABDBC7 /* VideListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideListViewController.swift; sourceTree = "<group>"; };
 		EBB37C8B2A90C7EA00ABDBC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBB37C8E2A90C7EA00ABDBC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBB37C902A90C7EA00ABDBC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBB37C9E2A90DA4400ABDBC7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		EBB37CA02A90DA7100ABDBC7 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		EBB37CA22A90E0A600ABDBC7 /* VideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListView.swift; sourceTree = "<group>"; };
+		EBB37CA52A90F85100ABDBC7 /* VideoListCollectionViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListCollectionViewDelegates.swift; sourceTree = "<group>"; };
+		EBB37CA82A90F87B00ABDBC7 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		EBB37CAB2A90F9BF00ABDBC7 /* VideoListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListCollectionViewCell.swift; sourceTree = "<group>"; };
+		EBB37CAD2A90FA3000ABDBC7 /* UICollectionViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCellExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +73,8 @@
 				EBB37C9C2A90DA2900ABDBC7 /* Coordinator */,
 				EBB37C962A90D8E100ABDBC7 /* ViewController */,
 				EBB37C972A90D8F500ABDBC7 /* Views */,
+				EBB37CA72A90F86900ABDBC7 /* Utils */,
 				EBB37C982A90D8FB00ABDBC7 /* Resources */,
-				EBB37C882A90C7E900ABDBC7 /* Main.storyboard */,
 			);
 			path = YoutubeLike;
 			sourceTree = "<group>";
@@ -74,7 +82,7 @@
 		EBB37C962A90D8E100ABDBC7 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				EBB37C862A90C7E900ABDBC7 /* ViewController.swift */,
+				EBB37CA42A90F83200ABDBC7 /* VideoListController */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -83,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				EBB37C8D2A90C7EA00ABDBC7 /* LaunchScreen.storyboard */,
+				EBB37CA22A90E0A600ABDBC7 /* VideoListView.swift */,
+				EBB37CAA2A90F9A900ABDBC7 /* CustomCells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,6 +129,32 @@
 				EBB37CA02A90DA7100ABDBC7 /* MainCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EBB37CA42A90F83200ABDBC7 /* VideoListController */ = {
+			isa = PBXGroup;
+			children = (
+				EBB37C862A90C7E900ABDBC7 /* VideListViewController.swift */,
+				EBB37CA52A90F85100ABDBC7 /* VideoListCollectionViewDelegates.swift */,
+			);
+			path = VideoListController;
+			sourceTree = "<group>";
+		};
+		EBB37CA72A90F86900ABDBC7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EBB37CA82A90F87B00ABDBC7 /* TypeAliases.swift */,
+				EBB37CAD2A90FA3000ABDBC7 /* UICollectionViewCellExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EBB37CAA2A90F9A900ABDBC7 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				EBB37CAB2A90F9BF00ABDBC7 /* VideoListCollectionViewCell.swift */,
+			);
+			path = CustomCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,7 +217,6 @@
 			files = (
 				EBB37C8F2A90C7EA00ABDBC7 /* LaunchScreen.storyboard in Resources */,
 				EBB37C8C2A90C7EA00ABDBC7 /* Assets.xcassets in Resources */,
-				EBB37C8A2A90C7E900ABDBC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,25 +227,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB37CA92A90F87B00ABDBC7 /* TypeAliases.swift in Sources */,
 				EBB37C9F2A90DA4400ABDBC7 /* Coordinator.swift in Sources */,
-				EBB37C872A90C7E900ABDBC7 /* ViewController.swift in Sources */,
+				EBB37CA62A90F85100ABDBC7 /* VideoListCollectionViewDelegates.swift in Sources */,
+				EBB37C872A90C7E900ABDBC7 /* VideListViewController.swift in Sources */,
+				EBB37CA32A90E0A600ABDBC7 /* VideoListView.swift in Sources */,
 				EBB37C832A90C7E900ABDBC7 /* AppDelegate.swift in Sources */,
+				EBB37CAE2A90FA3000ABDBC7 /* UICollectionViewCellExtension.swift in Sources */,
 				EBB37CA12A90DA7100ABDBC7 /* MainCoordinator.swift in Sources */,
 				EBB37C852A90C7E900ABDBC7 /* SceneDelegate.swift in Sources */,
+				EBB37CAC2A90F9BF00ABDBC7 /* VideoListCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EBB37C882A90C7E900ABDBC7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EBB37C892A90C7E900ABDBC7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EBB37C8D2A90C7EA00ABDBC7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

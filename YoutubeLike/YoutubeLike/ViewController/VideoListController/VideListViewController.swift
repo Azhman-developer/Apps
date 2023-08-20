@@ -21,8 +21,7 @@ final class VideListViewController: UIViewController {
         
         setupViews()
     }
-}
-
+} 
 
 // MARK: - Setup Views Function
 extension VideListViewController {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB8200252A91DEFF00BA7984 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8200242A91DEFF00BA7984 /* UIViewExtension.swift */; };
 		EBB37C832A90C7E900ABDBC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB37C822A90C7E900ABDBC7 /* AppDelegate.swift */; };
 		EBB37C852A90C7E900ABDBC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB37C842A90C7E900ABDBC7 /* SceneDelegate.swift */; };
 		EBB37C872A90C7E900ABDBC7 /* VideListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB37C862A90C7E900ABDBC7 /* VideListViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB8200242A91DEFF00BA7984 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		EBB37C7F2A90C7E900ABDBC7 /* YoutubeLike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeLike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB37C822A90C7E900ABDBC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBB37C842A90C7E900ABDBC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			children = (
 				EBB37CA82A90F87B00ABDBC7 /* TypeAliases.swift */,
 				EBB37CAD2A90FA3000ABDBC7 /* UICollectionViewCellExtension.swift */,
+				EB8200242A91DEFF00BA7984 /* UIViewExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			files = (
 				EBB37CA92A90F87B00ABDBC7 /* TypeAliases.swift in Sources */,
 				EBB37C9F2A90DA4400ABDBC7 /* Coordinator.swift in Sources */,
+				EB8200252A91DEFF00BA7984 /* UIViewExtension.swift in Sources */,
 				EBB37CA62A90F85100ABDBC7 /* VideoListCollectionViewDelegates.swift in Sources */,
 				EBB37C872A90C7E900ABDBC7 /* VideListViewController.swift in Sources */,
 				EBB37CA32A90E0A600ABDBC7 /* VideoListView.swift in Sources */,

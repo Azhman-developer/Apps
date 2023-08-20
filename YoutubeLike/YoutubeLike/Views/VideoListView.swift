@@ -43,13 +43,13 @@ extension VideoListView {
     private func createClipCollectionView() {
         let sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 5, right: 0)
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: self.frame.width, height: 700)
+        layout.itemSize = VideoListCollectionViewCell.size
 
         clipCollectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         clipCollectionView.collectionViewLayout = layout
         clipCollectionView.contentInset = sectionInset
         clipCollectionView.showsVerticalScrollIndicator = false
-        clipCollectionView.backgroundColor = UIColor.blue
+        clipCollectionView.backgroundColor = UIColor.white
         clipCollectionView.register(VideoListCollectionViewCell.self, forCellWithReuseIdentifier: VideoListCollectionViewCell.identifier)
 
         clipCollectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -62,7 +62,7 @@ extension VideoListView {
             clipCollectionView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor),
         ])
     }
-    
+        
     func setup(withConfig config: VideoListView.Config) {
         self.config = config
         setupCollectionViewDelegateDataSource()

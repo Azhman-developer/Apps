@@ -11,6 +11,7 @@ final class VideoListCollectionViewDelegates: CollectionViewDelegates {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: VideoListCollectionViewCell.identifier, for: indexPath) as! VideoListCollectionViewCell
+        cell.setup(forVideo: videos[indexPath.row])
         return cell
     }
     
@@ -19,7 +20,7 @@ final class VideoListCollectionViewDelegates: CollectionViewDelegates {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        return videos.count
     }
     
     

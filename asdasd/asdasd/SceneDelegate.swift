@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  YoutubeLike
+//  asdasd
 //
-//  Created by Azhman Adam on 8/19/23.
+//  Created by Azhman Adam on 8/20/23.
 //
 
 import UIKit
@@ -10,14 +10,13 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    private var coordinator: Coordinator?
+
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        setupMainCoordinator(for: windowScene)
+        guard let _ = (scene as? UIWindowScene) else { return }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -51,36 +50,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
-extension SceneDelegate {
-    
-    private func setupMainCoordinator(for scene: UIWindowScene) {
-        //set View controller-based status bar appearance to no in info plist so light content mode works and then set Status bar style to Light Content
-        let window = UIWindow(windowScene: scene)
-        let navController = UINavigationController()
-        setNavigationBarItemColor(forNav: navController)
-        coordinator = MainCoordinator(navigationController: navController)
-        coordinator?.start()
-        window.rootViewController = navController
-        self.window = window
-        window.makeKeyAndVisible()
-    }
-    
-    func setNavigationBarItemColor(forNav navigationController: UINavigationController) {
-        let bcColor = UIColor(red: 230 / 255, green: 32 / 255, blue: 31 / 255, alpha: 1)
-        if #available(iOS 13.0, *) {
-            let appearance = UINavigationBarAppearance()
-            appearance.configureWithDefaultBackground()
-            appearance.backgroundColor = bcColor
-
-            navigationController.navigationBar.standardAppearance = appearance
-            navigationController.navigationBar.scrollEdgeAppearance = appearance
-            navigationController.navigationBar.compactAppearance = appearance
-            navigationController.navigationItem.largeTitleDisplayMode = .never
-            navigationController.navigationBar.isTranslucent = false
-            
-        } else {
-            // Fallback on earlier versions
-            navigationController.navigationBar.barTintColor = bcColor
-        }
-    }
-}

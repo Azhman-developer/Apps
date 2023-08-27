@@ -65,22 +65,15 @@ extension SceneDelegate {
         window.makeKeyAndVisible()
     }
     
-    func setNavigationBarItemColor(forNav navigationController: UINavigationController) {
-        let bcColor = UIColor(red: 230 / 255, green: 32 / 255, blue: 31 / 255, alpha: 1)
-        if #available(iOS 13.0, *) {
-            let appearance = UINavigationBarAppearance()
-            appearance.configureWithDefaultBackground()
-            appearance.backgroundColor = bcColor
-
-            navigationController.navigationBar.standardAppearance = appearance
-            navigationController.navigationBar.scrollEdgeAppearance = appearance
-            navigationController.navigationBar.compactAppearance = appearance
-            navigationController.navigationItem.largeTitleDisplayMode = .never
-            navigationController.navigationBar.isTranslucent = false
-            
-        } else {
-            // Fallback on earlier versions
-            navigationController.navigationBar.barTintColor = bcColor
-        }
+    private func setNavigationBarItemColor(forNav navigationController: UINavigationController) {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithTransparentBackground()
+        appearance.backgroundColor = Colors.red
+        navigationController.navigationBar.standardAppearance = appearance
+        navigationController.navigationBar.scrollEdgeAppearance = appearance
+        navigationController.navigationBar.compactAppearance = appearance
+        navigationController.navigationItem.largeTitleDisplayMode = .never
+        navigationController.navigationBar.isTranslucent = false
+        navigationController.navigationBar.backgroundColor = Colors.red
     }
 }

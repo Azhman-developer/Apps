@@ -11,21 +11,20 @@ final class VideListViewController: UIViewController {
 
     var contentView = VideoListView()
     var coordinator: Coordinator?
+    var isViewsSetup = false
     
     override func loadView() {
         super.loadView()
         loadContentView()
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        setupViews()
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setupNavigationBar()
+        
+        if !isViewsSetup {
+            setupNavigationBar()
+            setupViews()
+        }
     }
 } 
 
@@ -38,6 +37,7 @@ extension VideListViewController {
     
     func setupViews() {
         setupContentView()
+        isViewsSetup = true
     }
     
     func setupNavigationBar() {
@@ -54,7 +54,9 @@ extension VideListViewController {
     }
     
     func setupContentView() {
-        let config = VideoListView.Config(collectionViewDelegates: VideoListCollectionViewDelegates())
+        let menuBarConfig = MenuBarCollectionViewDelegate(data: ["a", "b", "c", "d"])
+        let collectionViewDelegate = VideoListCollectionViewDelegates(videos: videos)
+        let config = VideoListView.Config(collectionViewDelegates: collectionViewDelegate, menuBarConfig: menuBarConfig)
         contentView.setup(withConfig: config)
     }
 }

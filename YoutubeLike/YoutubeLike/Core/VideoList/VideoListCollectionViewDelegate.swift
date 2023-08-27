@@ -9,6 +9,17 @@ import UIKit
 
 final class VideoListCollectionViewDelegates: CollectionViewDelegates {
     
+    var videos: [Video]
+    
+    init(videos: [Video]) {
+        self.videos = videos
+        super.init()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: VideoListCollectionViewCell.identifier, for: indexPath) as! VideoListCollectionViewCell
         cell.setup(forVideo: videos[indexPath.row])
